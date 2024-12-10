@@ -9,21 +9,21 @@ pipeline {
     stages {
         stage('Compile Stage') {
             steps {
-                withMaven(maven: 'apache-maven-3.9.7') { 
+                withMaven(maven: 'Maven3.9.7 windows') { 
                     bat 'mvn clean compile'
                 }
             }
         }
         stage('Testing Stage') {
             steps {
-                withMaven(maven: 'apache-maven-3.9.7') {
+                withMaven(maven: 'Maven3.9.7 windows') {
                     bat 'mvn test'
                 }
             }
         }
         stage('Install Stage') {
             steps {
-                withMaven(maven: 'apache-maven-3.9.7') {
+                withMaven(maven: 'Maven3.9.7 windows') {
                     bat 'mvn install'
                 }
             }
