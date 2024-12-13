@@ -5,6 +5,6 @@ package com.formation.integcontinue;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello Houssem :D !");
+        System.out.println("Hello Houssem :D :) !");
     }
 }
